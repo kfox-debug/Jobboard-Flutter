@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'ui/themes.dart';
 import 'ui/custom_button.dart';
+import 'package:flutter_exam/features/dashboard/screen/first_screen.dart';
+import 'package:flutter_exam/features/dashboard/screen/doorgaan_screen.dart';
+import 'package:flutter_exam/features/dashboard/screen/account_screen.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme: AppTheme.lightTheme,
-    home: MyButton(),
+    // theme: AppTheme.lightTheme,
+    home: AccountScreen(),
   ));
 }
 
@@ -73,7 +76,6 @@ class MyButtonState extends State<MyButton> {
               fontFamily: 'Inter',
               fontSize: 18,
               radius: 40,
-
               onPressed: () {
                 print("General Button 2 Pressed");
               },
@@ -93,28 +95,6 @@ class MyButtonState extends State<MyButton> {
             SizedBox(height: 20),
 
             // 4. Label-Icon Button
-            LabelIconButton(
-              label: "Label-Icon Button",
-              icon: Icons.star,
-              onPressed: () {
-                print("Label-Icon Button Pressed");
-              },
-            ),
-            SizedBox(height: 20),
-
-            // 5. Another Label-Icon Button with custom properties
-            LabelIconButton(
-              width: 260,
-              height: 50,
-              textColor: Colors.blue,
-              buttonColor: Colors.white,
-              fontSize: 16,
-              label: "Custom Label-Icon",
-              icon: Icons.arrow_forward,
-              onPressed: () {
-                print("Custom Label-Icon Button Pressed");
-              },
-            ),
           ],
         ),
       ),

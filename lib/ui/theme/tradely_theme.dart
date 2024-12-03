@@ -1,33 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:lyte_studios_flutter_ui/theme/extensions/hex_color.dart';
-import 'package:flutter_exam/ui/theme/border_radii.dart';
-import 'package:flutter_exam/ui/theme/text_styles.dart';
+import './border_radii.dart';
+import './text_styles.dart';
 
 final tradelyTheme = ThemeData(
-  scaffoldBackgroundColor: HexColor.fromHex("#FFFFFF"),
+  scaffoldBackgroundColor: HexColor.fromHex("#111111"),
   colorScheme: ColorScheme(
     brightness: Brightness.dark,
-    primary: HexColor.fromHex('#FF3E68'),
+    primary: HexColor.fromHex('#2D62FE'),
     onPrimary: HexColor.fromHex('#FFFFFF'),
-    secondary: HexColor.fromHex('#3A77FF'),
+    secondary: HexColor.fromHex('#5FD5EC'),
     onSecondary: HexColor.fromHex('#FFFFFF'),
-    tertiary: HexColor.fromHex('#FFFFFF'),
-    onTertiary: HexColor.fromHex('#FF3E68'),
-    error: HexColor.fromHex('#FF3535'),
-    onError: HexColor.fromHex('#FFFFFF'),
-    errorContainer: HexColor.fromHex('#FFFFFF'),
-    onErrorContainer: HexColor.fromHex('#000000'),
-    surface: HexColor.fromHex('#000000'),
-    onSurface: HexColor.fromHex('#070707'),
-    primaryContainer: HexColor.fromHex('#FFFFFF'),
-    onPrimaryContainer: HexColor.fromHex('#000000'),
-    secondaryContainer: HexColor.fromHex('#FFFFFF'),
-    onSecondaryContainer: HexColor.fromHex('#000000'),
-    tertiaryContainer: HexColor.fromHex("#FFFFFF"),
-    onTertiaryContainer: HexColor.fromHex("#000000"),
+    tertiary: HexColor.fromHex('#14D39F'),
+    error: HexColor.fromHex('#E13232'),
+    onError: HexColor.fromHex('#E67E22'),
+    errorContainer: HexColor.fromHex('#2A1718'),
+    onErrorContainer: HexColor.fromHex('#1C1612'),
+    surface: HexColor.fromHex('#131313'),
+    onSurface: HexColor.fromHex('#FFFFFF'),
+    primaryContainer: HexColor.fromHex('#242424'),
+    onPrimaryContainer: HexColor.fromHex('#CCCCCC'),
+    secondaryContainer: HexColor.fromHex('#1A1A1A'),
+    onSecondaryContainer: HexColor.fromHex('#CCCCCC'),
+    tertiaryContainer: HexColor.fromHex("#171717"),
+    onTertiaryContainer: HexColor.fromHex("#8B8B8B"),
 
     /// borders
-    outline: HexColor.fromHex("#FFFFFF"),
+    outline: HexColor.fromHex("#1F1F1F"),
   ),
   textTheme: TextTheme(
     titleLarge: TextStyles.titleLarge,
@@ -42,13 +41,13 @@ final tradelyTheme = ThemeData(
   ),
   inputDecorationTheme: InputDecorationTheme(
     hintStyle: TextStyles.labelLarge.copyWith(
-      color: HexColor.fromHex("#878787"),
+      color: HexColor.fromHex("#8B8B8B"),
     ),
     filled: true,
-    fillColor: HexColor.fromHex("#D9D9D94F"),
+    fillColor: HexColor.fromHex("#171717"),
     enabledBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: HexColor.fromHex("#FFFFFF"),
+        color: HexColor.fromHex("#313334"),
       ),
       borderRadius: BorderRadius.circular(
         BorderRadii.small,
@@ -56,7 +55,7 @@ final tradelyTheme = ThemeData(
     ),
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: HexColor.fromHex("#000000"),
+        color: HexColor.fromHex("#313334"),
       ),
       borderRadius: BorderRadius.circular(
         BorderRadii.small,
@@ -64,7 +63,7 @@ final tradelyTheme = ThemeData(
     ),
     border: OutlineInputBorder(
       borderSide: BorderSide(
-        color: HexColor.fromHex("#FFFFFF"),
+        color: HexColor.fromHex("#313334"),
       ),
       borderRadius: BorderRadius.circular(
         BorderRadii.small,
@@ -72,7 +71,7 @@ final tradelyTheme = ThemeData(
     ),
     focusedErrorBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: HexColor.fromHex("#000000"),
+        color: HexColor.fromHex("#E13232"),
       ),
       borderRadius: BorderRadius.circular(
         BorderRadii.small,
@@ -80,7 +79,7 @@ final tradelyTheme = ThemeData(
     ),
     errorBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: HexColor.fromHex("#FFFFFF"),
+        color: HexColor.fromHex("#E13232"),
       ),
       borderRadius: BorderRadius.circular(
         BorderRadii.small,
