@@ -18,7 +18,7 @@ class _FirstGlanceScreenState extends State<FirstGlanceScreen> {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const SizedBox(
           height: 200,

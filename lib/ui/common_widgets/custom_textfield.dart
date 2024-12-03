@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_exam/ui/theme/padding_sizes.dart';
+import 'package:flutter_exam/ui/theme/text_styles.dart';
 
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -35,29 +37,17 @@ class CustomTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: width,
-      height: height,
-      child: TextField(
-        controller: controller,
-        decoration: InputDecoration(
-          hintText: hintText,
-          hintStyle: TextStyle(
-            color: hintTextColor,
-            fontSize: 16.0,
-          ),
-          filled: true,
-          fillColor: formColor,
-          border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(
-              borderRadius,
-            ),
-          ),
-          contentPadding: contentPadding,
+    return TextField(
+      cursorHeight: 27,
+      style: TextStyles.bodySmall,
+      controller: controller,
+      decoration: InputDecoration(
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: PaddingSizes.large,
         ),
-        // Add other properties as needed, e.g., controller, onChanged, etc.
+        hintText: hintText,
       ),
+      // Add other properties as needed, e.g., controller, onChanged, etc.
     );
   }
 }

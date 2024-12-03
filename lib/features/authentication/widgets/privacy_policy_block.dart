@@ -18,7 +18,7 @@ class PrivacyPolicyBlock extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        vertical: PaddingSizes.medium,
+        vertical: PaddingSizes.xxl,
         horizontal: PaddingSizes.large,
       ),
       child: RichText(

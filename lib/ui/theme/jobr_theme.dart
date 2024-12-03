@@ -40,33 +40,34 @@ final jobrTheme = ThemeData(
     labelSmall: TextStyles.labelSmall,
   ),
   inputDecorationTheme: InputDecorationTheme(
-    hintStyle: TextStyles.labelLarge.copyWith(
-      color: HexColor.fromHex("#8B8B8B"),
+    hintStyle: TextStyles.labelSmall.copyWith(
+      fontSize: 14,
+      color: Colors.black.withOpacity(0.8),
     ),
     filled: true,
-    fillColor: HexColor.fromHex("#171717"),
+    fillColor: HexColor.fromHex("#F6F6F6"),
     enabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(
-        color: HexColor.fromHex("#313334"),
+      borderSide: const BorderSide(
+        color: Colors.transparent,
       ),
       borderRadius: BorderRadius.circular(
-        BorderRadii.small,
+        27,
+      ),
+    ),
+    border: OutlineInputBorder(
+      borderSide: const BorderSide(
+        color: Colors.transparent,
+      ),
+      borderRadius: BorderRadius.circular(
+        27,
       ),
     ),
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: HexColor.fromHex("#313334"),
+        color: HexColor.fromHex('#FF3E68'),
       ),
       borderRadius: BorderRadius.circular(
-        BorderRadii.small,
-      ),
-    ),
-    border: OutlineInputBorder(
-      borderSide: BorderSide(
-        color: HexColor.fromHex("#313334"),
-      ),
-      borderRadius: BorderRadius.circular(
-        BorderRadii.small,
+        27,
       ),
     ),
     focusedErrorBorder: OutlineInputBorder(
@@ -74,7 +75,7 @@ final jobrTheme = ThemeData(
         color: HexColor.fromHex("#E13232"),
       ),
       borderRadius: BorderRadius.circular(
-        BorderRadii.small,
+        27,
       ),
     ),
     errorBorder: OutlineInputBorder(
