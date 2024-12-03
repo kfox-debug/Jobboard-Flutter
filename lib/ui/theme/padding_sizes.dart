@@ -17,11 +17,5 @@ class PaddingSizes {
   static const double extraLarge = 20;
 
   /// mainly used as inside padding for blocks
-  static const double xxl = 28;
-
-  ///
-  static const double xxxl = 35;
-
-  ///
-  static const double xxxxl = 45;
+  static const double xxl = 24;
 }

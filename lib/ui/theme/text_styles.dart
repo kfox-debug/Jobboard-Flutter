@@ -1,35 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:lyte_studios_flutter_ui/theme/extensions/hex_color.dart';
 
 class TextStyles {
-  static Color mediumTitleColor = HexColor.fromHex("#898989");
-  static Color bodyColor = HexColor.fromHex("#CCCCCC");
-  static Color mediumBodyColor = HexColor.fromHex("#6E6E6E");
-  static Color labelTextColor = HexColor.fromHex("#767676");
-  static Color titleColor = HexColor.fromHex('#FFFFFF');
-  static Color subTitleColor = HexColor.fromHex('#7C7C7C');
+  static Color mainText = Colors.black;
+  static Color clearText = Colors.white;
 
   // --------------------------------------
   // Title
   static TextStyle titleLarge = TextStyle(
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w700,
-    fontSize: 28,
-    color: titleColor,
+    fontWeight: FontWeight.w900,
+    fontSize: 27,
+    color: mainText,
   );
 
   static TextStyle titleMedium = TextStyle(
-    fontSize: 17,
+    fontSize: 20,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w500,
-    color: mediumTitleColor,
+    fontWeight: FontWeight.w700,
+    color: mainText,
   );
 
   static TextStyle titleSmall = TextStyle(
     fontFamily: 'Inter',
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: FontWeight.w500,
-    color: titleColor,
+    color: mainText,
   );
 
   // --------------------------------------
@@ -37,32 +32,32 @@ class TextStyles {
   /// large text in body
   static TextStyle bodyLarge = TextStyle(
     fontFamily: 'Inter',
-    fontSize: 44,
-    color: bodyColor,
+    fontSize: 27,
+    color: mainText,
     fontWeight: FontWeight.w600,
   );
 
   /// medium text in body
   static TextStyle bodyMedium = TextStyle(
     fontFamily: 'Inter',
-    fontSize: 30,
-    fontWeight: FontWeight.w600,
-    color: mediumBodyColor,
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: mainText,
   );
 
   static TextStyle bodySmall = TextStyle(
     fontFamily: 'Inter',
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: FontWeight.w500,
-    color: mediumBodyColor,
+    color: mainText,
   );
 
   // --------------------------------------
   // label
   /// text input label
   static TextStyle labelLarge = TextStyle(
-    color: labelTextColor,
-    fontSize: 17,
+    color: mainText,
+    fontSize: 27,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w500,
   );
@@ -70,16 +65,16 @@ class TextStyles {
   /// tool tip text
   static TextStyle labelMedium = TextStyle(
     fontFamily: 'Inter',
-    fontSize: 13,
+    fontSize: 18,
     fontWeight: FontWeight.w500,
-    color: titleColor,
+    color: mainText,
   );
 
   // not used yet -
   static TextStyle labelSmall = TextStyle(
     fontFamily: 'Inter',
-    fontSize: 10,
+    fontSize: 16,
     fontWeight: FontWeight.w500,
-    color: titleColor,
+    color: mainText,
   );
 }
