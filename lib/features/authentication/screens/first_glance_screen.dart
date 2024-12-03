@@ -38,27 +38,6 @@ class _FirstGlanceScreenState extends State<FirstGlanceScreen> {
             context.push(LoginScreen.route);
           },
         ),
-        const Padding(
-          padding: EdgeInsets.all(30),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                // Use Flexible for more control
-                child: Text(
-                  'Door door te gaan ga je akkoord met onze algemene voorwaarden en onze privacy policy.',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-            ],
-          ),
-        )
       ],
     );
   }

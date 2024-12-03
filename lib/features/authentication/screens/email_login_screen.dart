@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_exam/features/authentication/screens/login_screen.dart';
+import 'package:flutter_exam/features/authentication/widgets/privacy_policy_block.dart';
 import 'package:flutter_exam/ui/common_widgets/custom_textfield.dart';
 import 'package:flutter_exam/ui/common_widgets/primary_button.dart';
 
@@ -73,33 +74,7 @@ class _EmailLoginScreenState extends State<EmailLoginScreen> {
         PrimaryButton(
           buttonText: 'Account maken',
         ),
-        SizedBox(
-          height: 10,
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 30,
-            vertical: 20,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                // Use Flexible for more control
-                child: Text(
-                  'Door door te gaan ga je akkoord met onze algemene voorwaarden en onze privacy policy.',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Color.fromARGB(120, 0, 0, 0),
-                  ),
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-            ],
-          ),
-        )
+        const PrivacyPolicyBlock(),
       ],
     );
   }
