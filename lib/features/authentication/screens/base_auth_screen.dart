@@ -8,11 +8,14 @@ import 'package:go_router/go_router.dart';
 import 'package:lyte_studios_flutter_ui/lyte_studios_flutter_ui.dart';
 
 class BaseAuthScreen extends StatelessWidget {
+  final bool canPop;
+
   final Widget child;
 
   const BaseAuthScreen({
     super.key,
     required this.child,
+    this.canPop = false,
   });
 
   @override
@@ -52,18 +55,23 @@ class BaseAuthScreen extends StatelessWidget {
                   ),
                   Positioned(
                     top: PaddingSizes.large,
-                    left: PaddingSizes.medium,
-                    child: Visibility(
-                      visible: true ?? context.canPop(),
-                      child: ClearInkWell(
-                        onTap: () {
-                          context.pop();
-                        },
-                        child: const Padding(
-                          padding: EdgeInsets.all(4.0),
-                          child: SvgIcon(
-                            JobrIcons.chevronLeftIcon,
-                            color: Colors.white,
+                    left: PaddingSizes.large,
+                    child: SafeArea(
+                      bottom: false,
+                      top: true,
+                      child: Visibility(
+                        visible: canPop,
+                        child: ClearInkWell(
+                          onTap: () {
+                            context.pop();
+                          },
+                          child: const Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child: SvgIcon(
+                              JobrIcons.chevronLeftIcon,
+                              size: 24,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),

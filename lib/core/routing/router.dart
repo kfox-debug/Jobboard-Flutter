@@ -10,7 +10,10 @@ GoRouter router = GoRouter(
   routes: <RouteBase>[
     ShellRoute(
       builder: (context, state, child) {
-        return BaseAuthScreen(child: child);
+        return BaseAuthScreen(
+          canPop: state.fullPath != FirstGlanceScreen.route,
+          child: child,
+        );
       },
       routes: [
         GoRoute(

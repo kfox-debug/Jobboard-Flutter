@@ -27,8 +27,6 @@ class JobrIcons {
   static const String googleIcon = '$_baseIconPath/google.svg';
   static const String appleIcon = '$_baseIconPath/apple.svg';
   static const String emailIcon = '$_baseIconPath/email.svg';
-  static const String lighteningIcon = '$_baseIconPath/lightening.svg';
-  static const String bagIcon = '$_baseIconPath/bag.svg';
   static const String chevronLeftIcon = '$_baseIconPath/chevron_left.svg';
 
   static const List<String> icons = [
@@ -36,7 +34,5 @@ class JobrIcons {
     googleIcon,
     appleIcon,
     emailIcon,
-    lighteningIcon,
-    bagIcon
   ];
 }

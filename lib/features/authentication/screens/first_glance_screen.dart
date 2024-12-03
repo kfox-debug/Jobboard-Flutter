@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_exam/features/authentication/screens/email_login_screen.dart';
 import 'package:flutter_exam/features/authentication/screens/login_screen.dart';
 import 'package:flutter_exam/ui/buttons/jobr_icon_button.dart';
-import 'package:flutter_exam/ui/theme/jobr_icons.dart';
 import 'package:go_router/go_router.dart';
 
 class FirstGlanceScreen extends StatefulWidget {
@@ -26,21 +24,16 @@ class _FirstGlanceScreenState extends State<FirstGlanceScreen> {
           height: 200,
         ),
         JobrIconButton(
-          icon: JobrIcons.lighteningIcon,
-          radius: 27,
-          label: "Ik zoek een job",
-          buttonColor: Colors.white,
+          label: "⚡ Ik zoek een job",
           onPressed: () {
-            print("Icon-Label Button Pressed");
+            context.push(LoginScreen.route);
           },
         ),
         const SizedBox(
           height: 10,
         ),
         JobrIconButton(
-          icon: JobrIcons.bagIcon,
-          label: "Ik zoek talent",
-          buttonColor: Colors.white,
+          label: "💼 Ik zoek talent",
           onPressed: () {
             context.push(LoginScreen.route);
           },
