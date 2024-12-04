@@ -30,8 +30,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  lyte_studios_flutter_ui: ^1.0.0
+  lyte_studios_flutter_ui:
+    git:
+      url: https://github.com/LYTE-studios/lyte_studios_flutter_ui
+      ref: main
+  # NAVIGATION
+  go_router: ^14.2.3
+  flutter_svg_provider: ^1.0.7
 
+  url_launcher: ^6.3.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -58,6 +65,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/background/
+    - assets/images/icons/
+    - assets/images/logos/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
